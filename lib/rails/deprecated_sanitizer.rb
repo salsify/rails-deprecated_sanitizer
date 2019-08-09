@@ -18,6 +18,10 @@ module Rails
     def white_list_sanitizer
       HTML::WhiteListSanitizer
     end
+
+    def safe_list_sanitizer
+      HTML::WhiteListSanitizer
+    end
   end
 end
 

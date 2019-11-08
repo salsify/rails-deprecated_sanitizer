@@ -2,7 +2,7 @@ require 'set'
 require 'cgi'
 require 'active_support/core_ext/module/attribute_accessors'
 
-module HTML
+module HTMLDeprecated
   class Sanitizer
     def sanitize(text, options = {})
       validate_options(options)
@@ -16,7 +16,7 @@ module HTML
 
   protected
     def tokenize(text, options)
-      tokenizer = HTML::Tokenizer.new(text)
+      tokenizer = HTMLDeprecated::Tokenizer.new(text)
       result = []
       while token = tokenizer.next
         node = Node.parse(nil, 0, 0, token, false)
@@ -51,7 +51,7 @@ module HTML
     end
 
     def process_node(node, result, options)
-      result << node.to_s if node.class == HTML::Text
+      result << node.to_s if node.class == HTMLDeprecated::Text
     end
   end
 
@@ -65,7 +65,7 @@ module HTML
 
   protected
     def process_node(node, result, options)
-      result << node.to_s unless node.is_a?(HTML::Tag) && included_tags.include?(node.name)
+      result << node.to_s unless node.is_a?(HTMLDeprecated::Tag) && included_tags.include?(node.name)
     end
   end
 
@@ -152,7 +152,7 @@ module HTML
 
     def process_node(node, result, options)
       result << case node
-        when HTML::Tag
+        when HTMLDeprecated::Tag
           if node.closing == :close
             options[:parent].shift
           else

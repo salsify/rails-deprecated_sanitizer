@@ -1,7 +1,7 @@
 require 'active_support/dependencies/autoload'
 $LOAD_PATH.unshift "#{File.dirname(__FILE__)}/html-scanner"
 
-module HTML
+module HTMLDeprecated
   extend ActiveSupport::Autoload
 
   eager_autoload do

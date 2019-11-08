@@ -3,7 +3,7 @@ require 'html/node'
 require 'html/selector'
 require 'html/sanitizer'
 
-module HTML #:nodoc:
+module HTMLDeprecated #:nodoc:
   # A top-level HTML document. You give it a body of text, and it will parse that
   # text into a tree of nodes.
   class Document #:nodoc:
@@ -51,14 +51,14 @@ EOF
 
     # Search the tree for (and return) the first node that matches the given
     # conditions. The conditions are interpreted differently for different node
-    # types, see HTML::Text#find and HTML::Tag#find.
+    # types, see HTMLDeprecated::Text#find and HTML::Tag#find.
     def find(conditions)
       @root.find(conditions)
     end
 
     # Search the tree for (and return) all nodes that match the given
     # conditions. The conditions are interpreted differently for different node
-    # types, see HTML::Text#find and HTML::Tag#find.
+    # types, see HTMLDeprecated::Text#find and HTML::Tag#find.
     def find_all(conditions)
       @root.find_all(conditions)
     end

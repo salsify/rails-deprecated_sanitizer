@@ -1,6 +1,6 @@
 require 'strscan'
 
-module HTML #:nodoc:
+module HTMLDeprecated #:nodoc:
 
   # A simple HTML tokenizer. It simply breaks a stream of text into tokens, where each
   # token is a string. Each string represents either "text", or an HTML element.

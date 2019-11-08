@@ -3,7 +3,7 @@ require 'rails/deprecated_sanitizer/html-scanner/html/node'
 
 class CDATANodeTest < ActiveSupport::TestCase
   def setup
-    @node = HTML::CDATA.new(nil, 0, 0, "<p>howdy</p>")
+    @node = HTMLDeprecated::CDATA.new(nil, 0, 0, "<p>howdy</p>")
   end
 
   def test_to_s

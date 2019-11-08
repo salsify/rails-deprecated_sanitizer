@@ -1,4 +1,4 @@
-module HTML #:nodoc:
+module HTMLDeprecated #:nodoc:
   module Version #:nodoc:
 
     MAJOR = 0

@@ -237,7 +237,7 @@ class TagNodeTest < ActiveSupport::TestCase
   private
 
     def tag(content, parent=nil)
-      node = HTML::Node.parse(parent,0,0,content)
+      node = HTMLDeprecated::Node.parse(parent, 0, 0, content)
       parent.children << node if parent
       node
     end

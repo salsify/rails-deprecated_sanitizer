@@ -1,6 +1,6 @@
 require 'strscan'
 
-module HTML #:nodoc:
+module HTMLDeprecated #:nodoc:
 
   class Conditions < Hash #:nodoc:
     def initialize(hash)
@@ -455,7 +455,7 @@ module HTML #:nodoc:
       # count children
       if opts = conditions[:children]
         matches = children.select do |c|
-          (c.kind_of?(HTML::Tag) and (c.closing == :self or ! c.childless?))
+          (c.kind_of?(HTMLDeprecated::Tag) and (c.closing == :self or ! c.childless?))
         end
 
         matches = matches.select { |c| c.match(opts[:only]) } if opts[:only]

@@ -3,7 +3,7 @@
 # Under MIT and/or CC By license.
 #++
 
-module HTML
+module HTMLDeprecated
 
   # Selects HTML elements using CSS 2 selectors.
   #
@@ -821,7 +821,7 @@ module HTML
   class Tag
 
     def select(selector, *values)
-      selector = HTML::Selector.new(selector, values)
+      selector = HTMLDeprecated::Selector.new(selector, values)
       selector.select(self)
     end
 

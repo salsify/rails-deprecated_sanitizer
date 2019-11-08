@@ -114,7 +114,7 @@ class TokenizerTest < ActiveSupport::TestCase
   private
 
     def tokenize(text)
-      @tokenizer = HTML::Tokenizer.new(text)
+      @tokenizer = HTMLDeprecated::Tokenizer.new(text)
     end
 
     def assert_next(expected, message=nil)

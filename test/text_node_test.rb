@@ -3,7 +3,7 @@ require 'rails/deprecated_sanitizer/html-scanner/html/node'
 
 class TextNodeTest < ActiveSupport::TestCase
   def setup
-    @node = HTML::Text.new(nil, 0, 0, "hello, howdy, aloha, annyeong")
+    @node = HTMLDeprecated::Text.new(nil, 0, 0, "hello, howdy, aloha, annyeong")
   end
 
   def test_to_s

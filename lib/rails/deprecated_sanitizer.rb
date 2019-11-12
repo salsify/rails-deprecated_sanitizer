@@ -1,6 +1,5 @@
 require "rails/deprecated_sanitizer/version"
 require "rails/deprecated_sanitizer/html-scanner"
-require "rails/deprecated_sanitizer/railtie" if defined?(Rails::Railtie)
 require "active_support/core_ext/module/remove_method"
 
 module Rails

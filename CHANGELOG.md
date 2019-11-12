@@ -1,3 +1,6 @@
+## 1.0.4
+* The sanitizers no longer override the new rails sanitizers.
+
 ## 1.0.3
 
 * Improved support for Rails 4.2.0.beta2 and above.

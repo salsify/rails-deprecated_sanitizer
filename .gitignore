@@ -22,3 +22,5 @@ tmp
 mkmf.log
 *.iml
 .idea/
+.DS_Store
+

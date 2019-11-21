@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'rails/deprecated_sanitizer/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "rails-deprecated_sanitizer"
+  spec.name          = "rails-deprecated_sanitizer-no-registration"
   spec.version       = Rails::DeprecatedSanitizer::VERSION
   spec.authors       = ["Kasper Timm Hansen"]
   spec.email         = ["kaspth@gmail.com"]

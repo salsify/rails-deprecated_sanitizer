@@ -12,6 +12,13 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/rails/rails-deprecated_sanitizer"
   spec.license       = "MIT"
 
+  if spec.respond_to?(:metadata)
+    spec.metadata['allowed_push_host'] = 'https://rubygems.org'
+    spec.metadata['rubygems_mfa_required'] = 'true'
+  else
+    raise 'RubyGems 2.0 or newer is required to set allowed_push_host.'
+  end
+
   spec.files         = Dir["CHANGELOG.md", "LICENSE", "README.md", "lib/**/*"]
   spec.test_files    = Dir["test/**/*.rb"]
   spec.require_paths = ["lib"]
